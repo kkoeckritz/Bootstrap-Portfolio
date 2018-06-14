@@ -12,7 +12,6 @@
 <body> 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
             <a href="index.html" class="navbar-brand">Kris Koeckritz</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,28 +23,42 @@
                     <a href="contact.html" class="nav-item nav-link">Contact <span class="sr-only">(current)</span></a>
                 </div>
             </div>
-        </div>
     </nav>
 
     <br>
 
-
-    <div class="container">
-        <div class="form-group">
-            <label for="conName">Name</label>
-            <input class="form-control" id="conName" type="text" placeholder="Your Name">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-3">
+            <div class="card">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="conEmail">Email</label>
-            <input class="form-control" id="conEmail" type="email" placeholder="abc@ijk.xyz">
-            <small class="form-text text-muted" id="emailHelp">I will guard your email with my life.</small>
+        <div class="col-sm-12 col-md-7">
+            <div class="container border rounded">
+                <div class="form-group">
+                    <label for="conName">Name</label>
+                    <input class="form-control" id="conName" type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="conEmail">Email</label>
+                    <input class="form-control" id="conEmail" type="email" placeholder="abc@ijk.xyz">
+                    <small class="form-text text-muted" id="emailHelp">I will guard your email with my life.</small>
+                </div>
+                <div class="form-group">
+                    <label for="conMessage">Message</label>
+                    <textarea name="" id="conMessage" cols="auto" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="conMessage">Message</label>
-            <textarea name="" id="conMessage" cols="auto" rows="10" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <br>
     </div>
 
     <br>
@@ -54,9 +67,8 @@
     <br>
     <br>
     <br>
-    <br>
 
-    <div class="footer fixed-bottom">
+    <div class="footer fixed-bottom text-center">
         <div class="container">
             <p>Copyright &copy; 2018 Kris Koeckritz</p>
         </div>
